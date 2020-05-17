@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="content-section">
+
+    <h2>loged out </h2>
+
+    <div class="border-top pt-3">
+
+        <a class='btn btn-outline-info' href={% url 'login' %}>Login</a>
+
+    </div>
+    <small>
+
+        Need An Account? <a class='ml-2' href={% url 'register' %}>Sign up</a>
+
+    </small>
+
+</div>
+{% endblock content%}
